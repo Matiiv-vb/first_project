@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+  <link href='https://css.gg/windows.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="grid">
+
+    
+    <div class="nav">
+      <p>Кількість <br> слів:</p>
+      <p><input class="numInput" list="variant"  type="number" value="" min="1" max="999" placeholder="Введіть число" >
+      <datalist id="variant">
+        <option value="3">
+        <option value="10">
+        <option value="25">
+        <option value="50">
+        <option value="99">
+        <option value="999">
+        </datalist></p>
+      <button class="startButton " >Почати</button>   
+
+      <div class="NavErrors">
+        <b id="error">0</b>
+        <span>помилок</span>
+      </div>
+      <div class="NavCharMin">
+        <b id="speed">0</b>
+        <span>символів/хв</span>
+      </div>
+      <div class="NavWordMin">
+        <b id="speedWord">0</b>
+        <span>слів/хв</span>
+      </div>
+      
+       
+    </div>
+    <div class="language"></div>
+    
+
+    
+
+    <div class="fields">
+      <div class="field1" id="out"></div>
+      <div class="Cursor">|</div>
+      <div class="field2" id="in"></div>
+    </div>
+
+    <div id="keyboard">
+      <div class="rowOne">
+        <button class="btn Backquote" value="Backquote">`</button>
+        <button class="btn" value="Digit1">1</button>
+        <button class="btn" value="Digit2">2</button>
+        <button class="btn" value="Digit3">3</button>
+        <button class="btn" value="Digit4">4</button>
+        <button class="btn" value="Digit5">5</button>
+        <button class="btn" value="Digit6">6</button>
+        <button class="btn" value="Digit7">7</button>
+        <button class="btn" value="Digit8">8</button>
+        <button class="btn" value="Digit9">9</button>
+        <button class="btn" value="Digit0">0</button>
+        <button class="btn" value="Minus">-</button>
+        <button class="btn" value="Equal">=</button>
+        <button class="btn" value="Backspace">Backspace</button>
+        
+      </div>
+      <div class="rowTwo">
+        <button class="btn Tab" value="Tab">Tab</button>
+        <button class="btn" value="KeyQ">Q</button>
+        <button class="btn" value="KeyW">W</button>
+        <button class="btn" value="KeyE">E</button>
+        <button class="btn" value="KeyR">R</button>
+        <button class="btn" value="KeyT">T</button>
+        <button class="btn" value="KeyY">Y</button>
+        <button class="btn" value="KeyU">U</button>
+        <button class="btn" value="KeyI">I</button>
+        <button class="btn" value="KeyO">O</button>
+        <button class="btn" value="KeyP">P</button>
+        <button class="btn" value="BracketLeft">[</button>
+        <button class="btn" value="BracketRight">]</button>
+        <button class="btn Backslash" value="Backslash">\</button>
+      </div>
+      <div class="rowTree">
+        <button class="btn CapsLock" value="CapsLock" >Caps Lock </button>
+        <button class="btn" value="KeyA">A</button>
+        <button class="btn" value="KeyS">S</button>
+        <button class="btn" value="KeyD">D</button>
+        <button class="btn" value="KeyF">F</button>
+        <button class="btn" value="KeyG">G</button>
+        <button class="btn" value="KeyH">H</button>
+        <button class="btn" value="KeyJ">J</button>
+        <button class="btn" value="KeyK">K</button>
+        <button class="btn" value="KeyL">L</button>
+        <button class="btn" value="Semicolon">;</button>
+        <button class="btn" value="Quote">'</button>
+        <button class="btn Enter" value="Enter">Enter</button>
+      </div>
+      <div class="rowFour">
+        <button class="btn ShiftLeft" value="ShiftLeft">Shift</button>
+        <button class="btn" value="KeyZ">Z</button>
+        <button class="btn" value="KeyX">X</button>
+        <button class="btn" value="KeyC">C</button>
+        <button class="btn" value="KeyV">V</button>
+        <button class="btn" value="KeyB">B</button>
+        <button class="btn" value="KeyN">N</button>
+        <button class="btn" value="KeyM">M</button>
+        <button class="btn" value="Comma">,</button>
+        <button class="btn" value="Period">.</button>
+        <button class="btn" value="Slash">/ ?</button>
+        <button class="btn ShiftRight" value="ShiftRight">Shift</button>
+      </div>
+      <div class="rowFive">
+        <button class="btn" value="ControlLeft">Ctrl</button>
+        <button class="btn gg-windows MetaLeft" value="MetaLeft" ></button>
+        <button class="btn" value="AltLeft">Alt</button>
+        <button class="btn space" value="Space"> </button>
+        <button class="btn" value="AltRight">Alt</button>
+        <button class="btn" value="ControlRight">Ctrl</button>
+      </div>
+    
+    </div>
+    
+    <div>
+      <div id="list"></div>
+      <button class="resetList btn" >Обнулити історію</button>
+    </div>
+
+    <div class="footer">
+      <p class="name">Виконав: Матіїв Василь</p>
+      <p>
+        <a href="https://www.facebook.com/profile.php?id=100011191119423" target="_blank"><img src="/icons/facebook.svg" width="40" height="40" alt="facebook"></a>
+        <a href="https://t.me/mvb_admin" target="_blank" ><img src="/icons/telegram.svg" width="40" height="40" alt="telegram"></a>
+       </p>
+    </div>
+  </div>
+ 
+ <script src="main.js" type="module"></script>
+ <!-- <script src="keyboard.js" type="module"></script> -->
+
+
+</body>
+</html>
