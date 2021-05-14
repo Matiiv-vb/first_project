@@ -5,6 +5,8 @@ let startButton = document.querySelector('.startButton');
 
 let input = document.getElementById("in");
 
+let cursor = document.querySelector('.Cursor');
+
 let output = document.getElementById("out");
 
 let fields = document.querySelector('.fields');
@@ -84,9 +86,8 @@ function activeKeySow(e) {
     return input.textContent.substring(0, 1);
   } 
 
-  
-  let fieldsPosition = fields.offsetTop +20; 
-  let headerOffset = input.offsetTop;
+  let fieldsPosition = fields.offsetTop +39; 
+  let headerOffset = cursor.offsetTop;
   let offsetPosition = headerOffset - fieldsPosition;
   fields.scrollTop = offsetPosition;
 
@@ -137,22 +138,22 @@ function activeKeySow(e) {
       document.querySelector('.language').textContent = ''
       }
     else {
-      console.log(pressSum++);
+      pressSum++;
     }
   
     
+  
+    if(e.getModifierState('CapsLock')) {
+      console.log('elok');
+      document.querySelector('.CapsLock').innerHTML = 'Caps Lock &#160<div class="point"></div>';
+    }
+    else {
+      document.querySelector('.CapsLock').innerHTML = 'Caps Lock &#160';
+    }
+  
 
-  if(e.getModifierState('CapsLock')) {
-    console.log('elok');
-    document.querySelector('.CapsLock').innerHTML = 'Caps Lock &#160<div class="point"></div>';
-  }
-  else {
-    document.querySelector('.CapsLock').innerHTML = 'Caps Lock &#160';
-  }
 
-
-
-  if(firstElemInput() == e.key) {
+  if(firstElemInput() == e.key) { //
  
     output.textContent += firstElemInput();
 
@@ -163,7 +164,7 @@ function activeKeySow(e) {
     console.log(charSum++);
 
    if(e.key === ' ') {
-     console.log( wordSum++);
+      wordSum++;
 
     }
    
