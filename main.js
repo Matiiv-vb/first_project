@@ -31,7 +31,9 @@ let timeStart
 
 let spId = document.getElementById('speed');
 let spWordId = document.getElementById('speedWord');
-let erId = document.getElementById('error')
+let erId = document.getElementById('error');
+let allChar = document.getElementById('allChar');
+
  
 const enLower = "abcdefghijklmnopqrstuvwxyz:;, '\' .?!£$%^&*()_\' ''+-*{}@~<>&\"[]\/1234567890`=."
 const enUpper = enLower.toUpperCase()
@@ -110,6 +112,7 @@ function activeKeySow(e) {
 
     spId.textContent = 0;
     spWordId.textContent = 0;
+    allChar.textContent = charSum;
   }
 
 
@@ -252,6 +255,7 @@ function activeKeySow(e) {
     spId.textContent = Math.round(charPerMin);
     spWordId.textContent = Math.round(wordsPerMin);
     erId.textContent = errorPress;
+    allChar.textContent = charSum;
   }
   else if(charSum <= 1) {
     erId.textContent = errorPress;
