@@ -1,6 +1,6 @@
 ::-webkit-scrollbar {
-  width: 8px; 
-  height: 8px; 
+  width: 8px;
+  height: 8px;
   background-color: gold;
 }
 
@@ -28,21 +28,22 @@ body {
   grid-template-columns: 1fr;
   grid-gap: 0.8vw;
 }
-#grid > div {
+
+#grid>div {
   font-size: 1.3vw;
   padding: 0.3em;
   background: gold;
   text-align: center;
 }
 
-#grid > .nav {
+#grid>.nav {
   font-size: 1.6em;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 0.6fr 1.1fr 1fr repeat(4, 1.5fr);
 }
 
-.nav > p {
+.nav>p {
   font-size: 1.2vw;
   text-align: center;
 }
@@ -85,7 +86,7 @@ section {
   border: 4px solid green;
 }
 
-#grid > .fields {
+#grid>.fields {
   width: auto;
   word-break: break-all;
   /* overflow-wrap: break-word; */
@@ -128,60 +129,61 @@ section {
     color: rgba(0, 0, 0, 0);
   }
 }
+
 @keyframes Cursor {
   100% {
     color: rgba(0, 0, 0, 0);
   }
 }
 
-#grid > #keyboard {
+#grid>#keyboard {
   display: grid;
   padding: 0.3em 13em;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
-#keyboard > .rowOne {
+#keyboard>.rowOne {
   display: grid;
   grid-template-columns: repeat(13, 1fr) 2fr;
 }
 
-#keyboard > .rowTwo {
+#keyboard>.rowTwo {
   display: grid;
   grid-template-columns: 1.5fr repeat(12, 1fr) 1.5fr;
 }
 
-#keyboard > .rowTree {
+#keyboard>.rowTree {
   display: grid;
   grid-template-columns: 2fr repeat(11, 1fr) 2fr;
 }
 
-#keyboard > .rowFour {
+#keyboard>.rowFour {
   display: grid;
   grid-template-columns: 2.4fr repeat(10, 1fr) 2.6fr;
 }
 
-#keyboard > .rowFive {
+#keyboard>.rowFive {
   display: grid;
   grid-template-columns: 1fr 1.3fr 1fr 1fr 1fr 1fr;
 }
 
-.rowOne > .btn {
+.rowOne>.btn {
   padding: 0 0.2em;
 }
 
-.rowTwo > .btn {
+.rowTwo>.btn {
   padding: 0 0.2em;
 }
 
-.rowTree > .btn {
+.rowTree>.btn {
   padding: 0 0.2em;
 }
 
-.rowFour > .btn {
+.rowFour>.btn {
   padding: 0 0.2em;
 }
 
-.rowFive > .btn {
+.rowFive>.btn {
   padding: 0 0.2em;
 }
 
@@ -194,32 +196,32 @@ input[type="submit"] {
   text-transform: none;
 }
 
-.rowTwo > .Tab {
+.rowTwo>.Tab {
   text-align: left;
   padding-left: 0.5em;
 }
 
-.rowOne > .Backslash {
+.rowOne>.Backslash {
   text-align: left;
   padding-left: 0.5em;
 }
 
-.rowTree > .CapsLock {
+.rowTree>.CapsLock {
   text-align: left;
   padding-left: 0.5em;
 }
 
-.rowTree > .Enter {
+.rowTree>.Enter {
   text-align: left;
   padding-left: 0.5em;
 }
 
-.rowFour > .ShiftLeft {
+.rowFour>.ShiftLeft {
   text-align: left;
   padding-left: 0.5em;
 }
 
-.rowFour > .ShiftRight {
+.rowFour>.ShiftRight {
   text-align: left;
   padding-left: 0.5em;
 }
@@ -231,6 +233,7 @@ input[type="submit"] {
 .gg-windows {
   transform: scale(var(--ggs, 1));
 }
+
 .gg-windows,
 .gg-windows::before {
   display: inline-block;
@@ -239,6 +242,7 @@ input[type="submit"] {
   width: 3.5em;
   height: 40px;
 }
+
 .gg-windows::before {
   content: "";
   position: relative;
@@ -279,92 +283,92 @@ li {
 
 
 @media (max-width: 77em) {
-  #grid > div {
+  #grid>div {
     font-size: 1.4vw;
   }
-  
-  #grid > .fields {
+
+  #grid>.fields {
     padding: 0.3em 6em;
   }
 
-  #grid > .nav {
+  #grid>.nav {
     font-size: 1.6em;
   }
 
-  .nav > p {
+  .nav>p {
     font-size: 1.4vw;
   }
 
-  #grid > #keyboard {
+  #grid>#keyboard {
     padding: 0.3em 10em;
   }
 
 }
 
 @media (max-width: 67em) {
-  #grid > div {
+  #grid>div {
     font-size: 1.4vw;
   }
-  
-  #grid > .fields {
+
+  #grid>.fields {
     padding: 0.3em 4em;
   }
 
-  #grid > .nav {
+  #grid>.nav {
     font-size: 1.5em;
   }
 
-  .nav > p {
+  .nav>p {
     font-size: 1.6vw;
   }
 
-  #grid > #keyboard {
+  #grid>#keyboard {
     padding: 0.3em 6em;
   }
 
 }
 
 @media (max-width: 57em) {
-  #grid > div {
+  #grid>div {
     font-size: 1.6vw;
   }
-  
-  #grid > .fields {
+
+  #grid>.fields {
     padding: 0.3em 2em;
   }
 
-  #grid > .nav {
+  #grid>.nav {
     font-size: 1.4em;
   }
 
-  .nav > p {
+  .nav>p {
     font-size: 1.8vw;
   }
 
-  #grid > #keyboard {
+  #grid>#keyboard {
     padding: 0.3em 3em;
   }
 
 }
 
 @media (max-width: 45em) {
-  #grid > div {
+  #grid>div {
     font-size: 1.6vw;
   }
-  
-  #grid > .fields {
+
+  #grid>.fields {
     padding: 0.3em 1em;
   }
 
-  #grid > .nav {
+  #grid>.nav {
     font-size: 1.4em;
   }
 
-  .nav > p {
+  .nav>p {
     font-size: 2.3vw;
   }
 
-  #grid > #keyboard {
+  #grid>#keyboard {
     padding: 0.3em 2em;
   }
 
@@ -374,25 +378,24 @@ li {
 }
 
 @media (max-width: 35em) {
-  #grid > div {
+  #grid>div {
     font-size: 2vw;
   }
-  
-  #grid > .fields {
+
+  #grid>.fields {
     padding: 0.3em 2em 0.3em 0;
   }
 
-  #grid > .nav {
+  #grid>.nav {
     font-size: 1.2em;
   }
 
-  .nav > p {
+  .nav>p {
     font-size: 2.8vw;
   }
 
-  #grid > #keyboard {
+  #grid>#keyboard {
     padding: 0.3em 0em;
   }
 
 }
-

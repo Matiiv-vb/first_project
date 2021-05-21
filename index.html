@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,22 +10,24 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
+
 <body>
   <div id="grid">
 
-    
+
     <div class="nav">
       <p>Кількість <br> слів:</p>
-      <p><input class="numInput" list="variant"  type="number" value="" min="1" max="999" placeholder="Введіть число" >
-      <datalist id="variant">
-        <option value="3">
-        <option value="10">
-        <option value="25">
-        <option value="50">
-        <option value="99">
-        <option value="999">
-        </datalist></p>
-      <button class="startButton " >Почати</button>   
+      <p><input class="numInput" list="variant" type="number" value="" min="1" max="999" placeholder="Введіть число">
+        <datalist id="variant">
+          <option value="3">
+          <option value="10">
+          <option value="25">
+          <option value="50">
+          <option value="99">
+          <option value="999">
+        </datalist>
+      </p>
+      <button class="startButton ">Почати</button>
 
       <div class="NavErrors">
         <b id="error">0</b>
@@ -42,13 +45,13 @@
         <b id="allChar">0</b>
         <span>симв</span>
       </div>
-      
-       
+
+
     </div>
     <div class="language"></div>
-    
 
-    
+
+
 
     <div class="fields">
       <div class="field1" id="out"></div>
@@ -72,7 +75,7 @@
         <button class="btn" value="Minus">-</button>
         <button class="btn" value="Equal">=</button>
         <button class="btn" value="Backspace">Backspace</button>
-        
+
       </div>
       <div class="rowTwo">
         <button class="btn Tab" value="Tab">Tab</button>
@@ -91,7 +94,7 @@
         <button class="btn Backslash" value="Backslash">\</button>
       </div>
       <div class="rowTree">
-        <button class="btn CapsLock" value="CapsLock" >Caps Lock </button>
+        <button class="btn CapsLock" value="CapsLock">Caps Lock </button>
         <button class="btn" value="KeyA">A</button>
         <button class="btn" value="KeyS">S</button>
         <button class="btn" value="KeyD">D</button>
@@ -121,32 +124,35 @@
       </div>
       <div class="rowFive">
         <button class="btn" value="ControlLeft">Ctrl</button>
-        <button class="btn gg-windows MetaLeft" value="MetaLeft" ></button>
+        <button class="btn gg-windows MetaLeft" value="MetaLeft"></button>
         <button class="btn" value="AltLeft">Alt</button>
         <button class="btn space" value="Space"> </button>
         <button class="btn" value="AltRight">Alt</button>
         <button class="btn" value="ControlRight">Ctrl</button>
       </div>
-    
+
     </div>
-    
+
     <div>
       <div id="list"></div>
-      <button class="resetList btn" >Обнулити історію</button>
+      <button class="resetList btn">Обнулити історію</button>
     </div>
 
     <div class="footer">
       <p class="name">Виконав: Матіїв Василь</p>
       <p>
-        <a href="https://www.facebook.com/profile.php?id=100011191119423" target="_blank"><img src="/icons/facebook.svg" width="40" height="40" alt="facebook"></a>
-        <a href="https://t.me/mvb_admin" target="_blank" ><img src="/icons/telegram.svg" width="40" height="40" alt="telegram"></a>
-       </p>
+        <a href="https://www.facebook.com/profile.php?id=100011191119423" target="_blank"><img src="/icons/facebook.svg"
+            width="40" height="40" alt="facebook"></a>
+        <a href="https://t.me/mvb_admin" target="_blank"><img src="/icons/telegram.svg" width="40" height="40"
+            alt="telegram"></a>
+      </p>
     </div>
   </div>
- 
- <script src="main.js" type="module"></script>
- <!-- <script src="keyboard.js" type="module"></script> -->
+
+  <script src="main.js" type="module"></script>
+  <!-- <script src="keyboard.js" type="module"></script> -->
 
 
 </body>
+
 </html>
