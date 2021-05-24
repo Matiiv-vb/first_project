@@ -4,12 +4,12 @@
 
 This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
 
-sh
+```sh
 $ npm install
-
-sh
+```
+```sh
 $ npm run start
-
+```
 Open http://localhost:4000 to view it in the browser.
 
 ## Usage
@@ -19,5 +19,5 @@ Open http://localhost:4000 to view it in the browser.
 ![screen1](screen/image_key1.png)
 ![screen2](screen/image_key2.png)
 
-##Technologies:
+## Technologies:
 JavaScript, HTML, CSS. Grid, JSON, Function and Class Components.
