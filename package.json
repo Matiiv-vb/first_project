@@ -1,0 +1,26 @@
+{
+  "name": "first_project",
+  "version": "1.0.0",
+  "description": "Василь Матіїв\r new changes\r faas",
+  "main": "main.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matiiv-vb/first_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matiiv-vb/first_project/issues"
+  },
+  "homepage": "https://github.com/Matiiv-vb/first_project#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
